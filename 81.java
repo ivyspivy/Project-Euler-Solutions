@@ -36,7 +36,7 @@ public class Problem81 {
 			 * 
 			 * This way, the solution will be in the upper left hand corner. 
 			 */
-			for (int i = 78; i >= 0; i--) { //starting next to the bottom right hand corner. I don't use a double for loop because this is a square matrix 
+			for (int i = 78; i >= 0; i--) { //starting next to the bottom right hand corner. I don't use 2 for loops because this is a square matrix 
 				// filling out bottom row, its minimal path solution is just adding itself to its neighbor
 				matrix[79][i] += matrix[79][i + 1];
 				// filling out the right column, its minimal path solution is the sum of itself and its bottom neighbor
